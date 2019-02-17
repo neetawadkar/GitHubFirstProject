@@ -1,0 +1,19 @@
+
+Feature: Login
+
+  Scenario Outline: Successful login with different credentials
+  Given I open the application
+  When I enter username as <username>
+  And I enter password as <password>
+  Then Login should be successful
+  
+   Examples: 
+      | username  | password |
+      | abc  			| abc@123| 
+      | xyz  			| xyz@456|
+  
+  Scenario : Successful LogOut
+	When User LogOut from the Application
+	Then Message displayed LogOut Successfully
+
+   

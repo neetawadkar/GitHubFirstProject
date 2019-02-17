@@ -1,0 +1,35 @@
+package StepDef;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class stepDef {
+	
+	@Given("^I open the application$")
+	public void i_open_the_application() throws Exception {
+	    
+	    //throw new PendingException();
+	}
+
+	@When("^I enter username as username(\\d+)$")
+	public void i_enter_username_as_username(int arg1) throws Exception {
+	    
+	    //throw new PendingException();
+	}
+
+	@When("^I enter password as password(\\d+)$")
+	public void i_enter_password_as_password(int arg1) throws Exception {
+	    
+	    //throw new PendingException();
+	}
+
+	@Then("^Login should be successful$")
+	public void login_should_be_successful() throws Exception {
+	   
+	  //  throw new PendingException();
+	}
+
+
+
+}

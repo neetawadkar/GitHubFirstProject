@@ -1,0 +1,51 @@
+package StepDef;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class stepDef {
+	
+	public static WebDriver driver;
+	
+	@Given("^I open the application$")
+	public void i_open_the_application() throws Exception {
+	    
+		System.setProperty("webdriver.chrome.driver","D:\\exes\\chromedriver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		driver.get("https://www.facebook.com/");
+	    //throw new PendingException();
+	}
+
+	@When("^I enter username as username(\\d+)$")
+	public void i_enter_username_as_username(String arg1) throws Exception {
+		driver.findElement(By.name("email")).sendKeys(arg1);
+		
+	    //throw new PendingException();
+	}
+
+	@When("^I enter password as password(\\d+)$")
+	public void i_enter_password_as_password(String arg2) throws Exception {
+		driver.findElement(By.name("pass")).sendKeys(arg2);
+	    //throw new PendingException();
+	}
+
+	@Then("^Login should be successful$")
+	public void login_should_be_successful() throws Exception {
+	   driver.findElement(By.id("u_0_2")).click();
+	   
+	   driver.close();
+	  //  throw new PendingException();
+	}
+
+
+
+}

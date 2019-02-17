@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="34027" started-at="2019-02-03T05:40:01Z" finished-at="2019-02-03T05:40:35Z">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="18471" started-at="2019-02-03T05:40:01Z" finished-at="2019-02-03T05:40:20Z">
+      <class name="multiBrowser.MultiBrowserTest">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:multiBrowser.MultiBrowserTest@8931cf]" name="beforeClass" is-config="true" duration-ms="13788" started-at="2019-02-03T05:40:01Z" finished-at="2019-02-03T05:40:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="login()[pri:0, instance:multiBrowser.MultiBrowserTest@8931cf]" name="login" duration-ms="3360" started-at="2019-02-03T05:40:15Z" finished-at="2019-02-03T05:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:multiBrowser.MultiBrowserTest@8931cf]" name="afterClass" is-config="true" duration-ms="1254" started-at="2019-02-03T05:40:19Z" finished-at="2019-02-03T05:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- multiBrowser.MultiBrowserTest -->
+    </test> <!-- ChromeTest -->
+    <test name="firefox" duration-ms="34027" started-at="2019-02-03T05:40:01Z" finished-at="2019-02-03T05:40:35Z">
+      <class name="multiBrowser.MultiBrowserTest">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:multiBrowser.MultiBrowserTest@1d6a08]" name="beforeClass" is-config="true" duration-ms="30656" started-at="2019-02-03T05:40:01Z" finished-at="2019-02-03T05:40:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="login()[pri:0, instance:multiBrowser.MultiBrowserTest@1d6a08]" name="login" duration-ms="496" started-at="2019-02-03T05:40:32Z" finished-at="2019-02-03T05:40:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:multiBrowser.MultiBrowserTest@1d6a08]" name="afterClass" is-config="true" duration-ms="2838" started-at="2019-02-03T05:40:33Z" finished-at="2019-02-03T05:40:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- multiBrowser.MultiBrowserTest -->
+    </test> <!-- firefox -->
+  </suite> <!-- Suite -->
+</testng-results>

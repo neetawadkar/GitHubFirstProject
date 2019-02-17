@@ -1,0 +1,43 @@
+!SESSION 2019-02-17 11:03:25.223 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-17 11:03:40.682
+!MESSAGE Application error
+!STACK 1
+org.eclipse.swt.SWTError: No more handles
+	at org.eclipse.swt.SWT.error(SWT.java:4578)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:448)
+	at org.eclipse.swt.widgets.Control.createHandle(Control.java:718)
+	at org.eclipse.swt.widgets.Composite.createHandle(Composite.java:292)
+	at org.eclipse.swt.widgets.Decorations.createHandle(Decorations.java:375)
+	at org.eclipse.swt.widgets.Shell.createHandle(Shell.java:592)
+	at org.eclipse.swt.widgets.Control.createWidget(Control.java:758)
+	at org.eclipse.swt.widgets.Scrollable.createWidget(Scrollable.java:151)
+	at org.eclipse.swt.widgets.Decorations.createWidget(Decorations.java:384)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:299)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:378)
+	at org.eclipse.jface.window.Window.createShell(Window.java:482)
+	at org.eclipse.jface.window.Window.create(Window.java:425)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1096)
+	at org.eclipse.jface.window.Window.open(Window.java:783)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:326)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
